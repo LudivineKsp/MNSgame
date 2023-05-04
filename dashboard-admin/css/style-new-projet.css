@@ -1,0 +1,557 @@
+/* ============= GOOGLE FONTS =============== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap');
+
+/* ============= VARIABLES CSS =============== */
+:root {
+    --header-height: 3rem;
+
+    /* === Colors === */
+
+    /* First color */
+    --hue-color: 24;
+
+    /* Second color */
+    --hue-second-color: 209;
+
+    /* HSL color mode */
+    --first-color: hsl(var(--hue-color), 100%, 50%);
+    --second-color: hsl(var(--hue-second-color), 57%, 53%);
+    --first-color-alt: hsl(var(--hue-color), 100%, 41%);
+    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+    --second-color-alt: hsl(var(--hue-second-color), 100%, 30%);
+    --second-color-lighter: hsl(var(--hue-second-color), 92%, 85%);
+    --title-color: hsl(var(--hue-color), 8%, 15%);
+    --text-color: hsl(var(--hue-color), 8%, 45%);
+    --text-color-light: hsl(var(--hue-color), 8%, 65%);
+    --input-first-color: hsl(var(--hue-color), 70%, 96%);
+    --body-first-color: hsl(var(--hue-color), 60%, 99%);
+    --input-second-color: hsl(var(--hue-second-color), 70%, 96%);
+    --body-second-color: hsl(var(--hue-second-color), 60%, 99%);
+    --container-color: #fff;
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+    --background-color: hsl(var(--hue-second-color), 100%, 15%);
+    --fake-white: #F7F7F7;
+
+    /* ============= FONTS & TYPOGRAPHY =============== */
+
+    --body-font: 'Roboto', sans-serif;
+
+    /* 0.5rem = 8px, 1rem = 16px... */
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /* Font weight */
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /* Margenes bottom */
+    --mb-0-25: 0.25rem;
+    --mb-0-5: 0.5rem;
+    --mb-0-75: 0.75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+}
+
+/* Font size for large devices */
+
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+/* ============= VARIABLES DARK THEME =============== */
+
+body.dark-theme {
+
+    --first-color-second: hsl(var(--hue-color), 30%, 8%);
+    --title-color: hsl(var(--hue-color), 8%, 95%);
+    --text-color: hsl(var(--hue-color), 8%, 75%);
+    --input-color: hsl(var(--hue-color), 29%, 16%);
+    --body-color: hsl(var(--hue-color), 28%, 12%);
+    --container-color: hsl(var(--hue-color), 29%, 16%);
+}
+
+
+/* ============= BASE =============== */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 0 var(--header-height) 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--fake-white);
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: transparent;
+    border-width: 0;
+    padding: 0;
+}
+
+html {
+    overflow-y: hidden;
+}
+
+/* ============= HEADER =============== */
+
+
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 250px;
+    height: 675px;
+    margin-left: 20px;
+    background-color: var(--container-color);
+    border-radius: 20px;
+}
+
+
+.dashboard {
+
+    height: 750px;
+    background-color: var(--container-color);
+    border-radius: 20px;
+    width: 80%;
+    padding: 0px 20px 20px 20px;
+}
+
+.title_dashboard {
+    text-align: center;
+    padding: 30px 0 30px 0;
+    height: 100px;
+}
+
+.h3_menu {
+    padding-top: 40px;
+
+}
+
+.img_menu {
+    background-color: var(--fake-white);
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+    border: solid;
+    border-color: var(--second-color);
+    margin: auto;
+    margin-top: 50px;
+
+}
+
+.link_menu {
+    padding: 20px;
+}
+
+.identifiant {
+    text-align: center;
+}
+
+.link_menu h3 a i {
+    font-size: 22px;
+}
+
+.user_name {
+    color: var(--title-color);
+    font-size: var(--h2-font-size);
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+
+.id {
+    padding-bottom: 30px;
+}
+
+.projet {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 44%;
+    background-color: var(--fake-white);
+    margin-left: 10px;
+    padding: 10px 0 0 150px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.groupe {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 95%;
+    background-color: var(--fake-white);
+    margin-left: 10px;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.contain_dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+}
+
+.container_groupe {
+    height: 560px;
+    width: 30%;
+
+}
+
+.container_projet {
+    height: 550px;
+    padding-right: 50px;
+    width: 70%;
+}
+
+.container_menu {
+    display: flex;
+    width: 20%;
+    height: 750px;
+
+}
+
+.footer_menu {
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    align-self: self-end;
+    margin-left: 30px;
+    align-items: center;
+    width: 250px;
+}
+
+main {
+    display: flex;
+}
+
+.a_dashboard {
+    color: var(--text-color);
+}
+
+.a_dashboard i {
+    font-size: 22px;
+    color: var(--title-color);
+}
+
+.a_menu {
+    color: var(--text-color);
+}
+
+.navbar {
+    display: flex;
+    height: 75px;
+    justify-content: space-between;
+    padding: 5px 10px 5px 20px;
+}
+
+.navbar a {
+    align-self: center;
+    padding-right: 50px;
+}
+
+.navbar a i {
+    font-size: 22px;
+    color: var(--title-color);
+}
+
+
+.footer_menu div {
+
+    padding-right: 35px;
+}
+
+.footer_menu div a i {
+    font-size: 22px;
+    color: var(--title-color);
+}
+
+h1 {
+    color: var(--title-color);
+}
+
+h2 {
+    color: var(--text-color);
+    padding: 10px 0 10px 30px;
+    font-family: var(--h2-font-size);
+}
+
+.controler {
+    width: 200px;
+    padding-left: 20px;
+}
+
+.logo p {
+    font-family: Orbitron;
+    color: var(--title-color);
+    font-size: 25px;
+}
+
+.logo {
+    display: flex;
+
+}
+
+/* NOUVEAU PROJETS */
+
+.new_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.general {
+    display: flex;
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.advanced {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.title_advanced {
+    margin-left: 20px;
+    width: 100%;
+}
+
+.title_general {
+    margin-left: 40px;
+    width: 100%;
+}
+
+.container_general {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 80%;
+    border-radius: 20px;
+    margin-left: 50px;
+    background-color: var(--fake-white);
+    flex-direction: column;
+
+}
+
+.container_advanced {
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    height: 60%;
+    margin-left: 30px;
+    border-radius: 20px;
+    background-color: var(--fake-white);
+    flex-direction: column;
+
+}
+
+.start_projet {
+    display: flex;
+    background-color: var(--second-color);
+    border-radius: 20px;
+    color: var(--container-color);
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 85%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.start_projet i {
+    color: var(--container-color);
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.input_projet {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10%;
+    height: 25%;
+    margin-top: 10px;
+}
+
+.input_projet input {
+    width: 80%;
+    border-radius: 20px;
+    height: 50%;
+    margin-top: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.textarea_projet {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10%;
+    height: 50%;
+    margin-top: 10px;
+    border: none;
+}
+
+.textarea_projet textarea {
+    width: 80%;
+    border-radius: 20px;
+    height: 70%;
+    margin-top: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.container_general label {
+    margin-left: 3%;
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left: 18%
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: var(--second-color);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--second-color);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.check {
+    display: flex;
+    margin-left: 10%;
+    align-items: center;
+}
+.check label{
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+.input_projet input{
+    padding-left: 20px;
+    font-size: 1rem;
+}
+
+.textarea_projet textarea{
+    padding: 10px 0 0 20px;
+    font-size: 1rem;
+}
+
+.start_projet input{
+    background-color: var(--second-color);
+    border: none;
+    height: 100%;
+    width: 100%;
+    color: white;
+    border-radius: 20px;
+    font-size: 1rem;
+}

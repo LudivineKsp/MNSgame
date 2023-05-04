@@ -33,7 +33,7 @@
             <div class="modal-content">
 
             <!-- Login Form -->
-                <form action="/login-post.php" method="POST">
+                <form action="/site/login-post.php" method="POST">
                     <div class="form-container">
                         <!-- Email -->
                         <input class="modal-input" type="email" id="email-login"  name="email-login" placeholder="Email">

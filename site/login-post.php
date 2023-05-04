@@ -56,7 +56,7 @@ if(!empty($_POST['login-btn'])) {
 
             // On redirige l'utilisateur vers son dashboard
             if ($user['is_admin']){
-                header("Location: /admin.php");
+                header("Location: /dashboard-admin");
 
             } else {
                 header("Location: /");
